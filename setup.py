@@ -41,7 +41,7 @@ if PY3:
 
 setup(
     name='thrift_sasl',
-    version='0.2.1',
+    version='0.2.1+supercollider',
     description=description,
     long_description=description,
     author='Uri Laserson',
