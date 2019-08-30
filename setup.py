@@ -29,11 +29,7 @@ PY3 = sys.version_info[0] == 3
 description = ("Thrift SASL Python module that implements SASL transports for "
                "Thrift (`TSaslClientTransport`).")
 
-if is_platform_windows():
-    # installing sasl on windows is rather painful.  Defer to using the pure python version instead.
-    requirements = ['pure-sasl>=0.3.0']
-else:
-    requirements = ['sasl>=0.2.1']
+requirements = ['pure-sasl>=0.3.0']
 
 if PY2:
     requirements.append('thrift')
